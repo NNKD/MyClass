@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "poppins", sans-serif;
+}
+
+.back-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	z-index: -1;
+}
+
+/* content */
+.content {
+	position: absolute;
+	top: 10%;
+	text-align: center;
+	left: 0;
+	right: 0;
+	text-shadow: 0 0 5px #000;
+}
+.content_top .title {
+	color: #fff;
+	font-size: 5rem;
+	margin-bottom: 40px;
+}
+.content_top .title span {
+	color: #ffd883;
+}
+
+.content_top .desc {
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.content_center {
+	width: 50%;
+	margin: 40px auto;
+}
+.content_center .desc {
+	position: relative;
+	color: cornsilk;
+	font-size: 1.8rem;
+	padding: 12px 0;
+	font-weight: 600;
+}
+
+.content_center .desc::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+}
+
+.content_center .desc::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+}
+
+.content_bottom {
+	margin: 60px 0;
+}
+
+.content_bottom .explore {
+	font-size: 1.4rem;
+	color: #000;
+	text-decoration: none;
+	background: #fbeba1;
+	padding: 12px 36px;
+	text-shadow: none;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #000;
+}
+
+.content_bottom .explore:hover {
+	background-color: #5cee4d;
+	color: #000;
+	transition: all 0.3s linear;
+}
+
+/* Social */
+.social {
+	text-shadow: none;
+}
+
+.social a {
+	color: #000;
+}
+
+.icon {
+	display: inline-block;
+	margin: 0 24px;
+	background-color: #fff;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	box-shadow: 0 0 10px #000;
+	cursor: pointer;
+	transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.icon_fb:hover {
+	background-color: #3b5999;
+}
+
+.icon_fb:hover a {
+	color: #fff;
+}
+
+.icon_twitter:hover {
+	background-color: #46c1f6;
+}
+
+.icon_twitter:hover a {
+	color: #fff;
+}
+
+.icon_github:hover {
+	background-color: #333;
+}
+
+.icon_github:hover a {
+	color: #fff;
+}
+
+.icon_youtube:hover {
+	background-color: #de463b;
+}
+
+.icon_youtube:hover a {
+	color: #fff;
+}

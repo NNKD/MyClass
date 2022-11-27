@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/login.css" />
+		<title>Login</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<img src="./assets/img/logo.png" alt="" />
+			<div class="login">
+				<p class="title">Đăng Nhập</p>
+				<div class="select">
+					<button class="sinhvien">Sinh Viên</button>
+					<button class="giangvien">Giảng Viên</button>
+				</div>
+				<form action="" onsubmit="return false">
+					<div class="mail_content">
+						<input
+							type="email"
+							class="input_mail"
+							placeholder=" "
+							required
+						/>
+						<label class="form_label_mail" for="">Email</label>
+					</div>
+					<div class="pass_content">
+						<input
+							type="password"
+							class="input_pass"
+							placeholder=" "
+							required
+						/>
+						<label class="form_label_pass" for="">Mật Khẩu</label>
+					</div>
+					<div class="check">
+						<input type="checkbox" name="" id="" />
+						<label for="">Lưu mật khẩu</label>
+					</div>
+					<button class="btn_login" onclick="login()">Đăng Nhập</button>
+					<a class="forgot_pass" href="">Quên mật khẩu !</a>
+				</form>
+			</div>
+		</div>
+
+		<div id="toast" class="toasterror">
+			<div class="toast toast--error">
+				<div class="toast_icon">
+					<i class="fi fi-rs-exclamation"></i>
+				</div>
+				<div class="toast_body">
+					<h3 class="toast_title">Lỗi</h3>
+					<p class="toast_msg">Sai thông tin đăng nhập!</p>
+				</div>
+				<div class="toast_close--error">
+					<i class="fi fi-rs-cross"></i>
+				</div>
+			</div>
+		</div>
+		<div id="toast" class="toastwarning">
+			<div class="toast toast--warning">
+				<div class="toast_icon">
+					<i class="fi fi-rs-exclamation"></i>
+				</div>
+				<div class="toast_body">
+					<h3 class="toast_title">Lỗi</h3>
+					<p class="toast_msg">Thông tin không hợp lệ!</p>
+				</div>
+				<div class="toast_close--warning">
+					<i class="fi fi-rs-cross"></i>
+				</div>
+			</div>
+		</div>
+
+		<script src="./login.js"></script>
+	</body>
+</html>

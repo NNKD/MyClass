@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/category.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+		/>
+		<title>Quốc Phòng</title>
+	</head>
+	<body>
+		<!-- study -->
+		<div class="study">
+			<div class="header">
+				<div class="search_cover">
+					<div class="search">
+						<input
+							class="search_input"
+							type="text"
+							name=""
+							placeholder="Tìm kiếm môn học bạn cần"
+							onkeyup="search()"
+						/>
+						<i class="fi fi-rs-search" id="iconSearch"></i>
+						<div class="search_list">
+							<ul class="search_menu_list" id="menu_list">
+								<li class="menu_item">
+									<a href="./categoryDaiCuong.html">Đại Cương</a>
+								</li>
+								<li class="menu_item">
+									<a href="./categoryChuyenNganh.html">Chuyên Ngành</a>
+								</li>
+								<li class="menu_item">
+									<a href="./categoryQP.html">Quốc Phòng</a>
+								</li>
+								<li class="menu_item">
+									<a href="./toana1.html">Toán Cao Cấp A1</a>
+								</li>
+								<li class="menu_item">
+									<a href="./toana2.html">Toán Cao Cấp A2</a>
+								</li>
+								<li class="menu_item">
+									<a href="./toana3.html">Toán Cao Cấp A3</a>
+								</li>
+								<li class="menu_item">
+									<a href="./ltcb.html">Lập Trình Cơ Bản</a>
+								</li>
+								<li class="menu_item">
+									<a href="./ltnc.html">Lập Trình Nâng Cao</a>
+								</li>
+								<li class="menu_item">
+									<a href="./gtnm.html">Giao Tiếp Người Máy</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu">
+					<ul>
+						<li>
+							<a href="./home.html" class="menu_top">Trang Chủ</a>
+						</li>
+						<li>
+							<a href="./list.html#category" class="menu_top"
+								>Danh Mục</a
+							>
+						</li>
+						<li>
+							<a href="./list.html#subject" class="menu_top">Môn Học</a>
+						</li>
+						<li>
+							<i class="fi fi-rs-bell" id="bell"></i>
+							<div class="notice" id="notice">
+								<ul>
+									<li>
+										<a href="./gtnmClass.html"
+											>Giao Tiếp Người Máy:
+											<span
+												><br />
+												Đến hạn nộp bài</span
+											></a
+										>
+									</li>
+									<li>
+										<a href="./ltncClass.html"
+											>Lập Trình Nâng Cao:
+											<span
+												><br />
+												Có thông báo mới</span
+											></a
+										>
+									</li>
+									<li>
+										<a href="./toana1Class.html"
+											>Toán Cao Cấp A1:
+											<span
+												><br />
+												Bài tập mới</span
+											></a
+										>
+									</li>
+									<li>
+										<a href="./toana2Class.html"
+											>Toán Cao Cấp A2:
+											<span
+												><br />
+												Tài liệu mới</span
+											></a
+										>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<i class="fi fi-rs-user" id="user"></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- subject-list -->
+		<div class="subject-list" id="subject">
+			<span class="subject-list-title">
+				<a class="map main_map" href="./list.html">Danh Mục </a>
+			</span>
+			<span class="subject-list-title"> > </span>
+			<span class="subject-list-title">
+				<a class="map sub_map" href="#">Quốc Phòng</a>
+			</span>
+			<div class="subject-list-item">
+				<a href="./hp12.html" class="subject-item">
+					<img src="./assets/img/sach.jpg" alt="" />
+					<div class="item-desc">
+						<span>Học Phần 1<br />Học Phần 2</span>
+						<p class="item-content">ĐL, CT</p>
+					</div>
+				</a>
+				<a href="./hp3.html" class="subject-item">
+					<img src="./assets/img/it.jpg" alt="" />
+					<div class="item-desc">
+						<span>Học Phần 3</span>
+						<p class="item-content">QS</p>
+					</div>
+				</a>
+				<a href="./hp4.html" class="subject-item">
+					<img src="./assets/img/quocphong.jpg" alt="" />
+					<div class="item-desc">
+						<span>Học Phần 4</span>
+						<p class="item-content">KC</p>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<div class="footer">
+			<p class="footer-title">My Class</p>
+			<div class="footer-desc">
+				<ul>
+					<li>Môn</li>
+					<li>Giao Tiếp Người Máy</li>
+				</ul>
+				<ul>
+					<li>Giảng viên</li>
+					<li>Lê Phi Hùng</li>
+				</ul>
+				<ul>
+					<li>Sinh viên</li>
+					<li>Nguyễn Ngọc Khánh Duy</li>
+					<li>Võ Nam Ngân Hà</li>
+				</ul>
+				<ul>
+					<li>Công cụ hỗ trợ</li>
+					<li>Figma</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- cover_sidebar -->
+		<div class="cover_sidebar" id="sidebar">
+			<div class="sidebar" id="sidebar_container">
+				<i class="fi fi-rs-cross sidebar_icon" id="remove"></i>
+				<div class="user_info">
+					<img src="./assets/img/user.png" alt="" />
+					<p class="user_name">Họ và tên</p>
+					<p class="user_department">Khoa:</p>
+					<a href="./information.html" class="btn_info">Xem Thông Tin</a>
+				</div>
+				<div class="sidebar_menu">
+					<ul>
+						<li>
+							<i class="fi fi-rs-home"></i>
+							<a href="./home.html">Trang chủ</a>
+						</li>
+						<li>
+							<i class="fi fi-rs-book-bookmark"></i
+							><a href="./list.html#subject">Môn học</a>
+						</li>
+						<li>
+							<i class="fi fi-rs-folder"></i
+							><a href="./document.html">Tài liệu</a>
+						</li>
+						<li>
+							<i class="fi fi-rs-calendar-clock"></i>
+							<a href="./schedule.html">Thời khoá biểu</a>
+						</li>
+					</ul>
+				</div>
+				<a href="./login.html" class="log_out">Đăng xuất</a>
+			</div>
+		</div>
+
+		<!-- cover dùng cho việc tắt gợi ý tìm kiếm khi nhấn ngoài -->
+		<div class="cover"></div>
+		<script src="./main.js"></script>
+	</body>
+</html>
